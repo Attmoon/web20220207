@@ -1,0 +1,44 @@
+<!-- 10개의 h1코드를 만들고 그중 세개는 id를 지정후 라인스로우를 주고 색상은
+blue로 하여라. 네개는 special클래스만 주고 그중 두개는 또 error도 같이줘라
+이중 special 클래스는 underline을 주고 error에는 색깔을 노란색으로 해라. -->
+<DOCTYPE html>
+<html>
+<head>
+    <style>
+        #Yourhead{
+            text-decoration: line-through;
+            color: blue;
+        }
+        /* .special{
+            text-decoration:underline; */
+        }
+        .error{
+            color:yellow;
+        }
+        #myhead{
+            text-decoration: line-through;
+        }
+        #hishead{
+            text-decoration: underline;
+        }
+        /* special 클래스안에서 두번째, h1에서 다섯번째를 제외하려고할때
+        쓰는 코드 */
+        .special:not(h1:nth-of-type(5)) {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Yourhead">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead">Eaque, vel repudiandae?</h1>
+    <h1 id="hishead">Distinctio, debitis nostrum?</h1>
+    <h1 class="special error">Corrupti, quia magnam?</h1>
+    <h1 class="special error">Ipsam, aut architecto?</h1>
+    <h1 class="special">Eaque, delectus fugiat.</h1>
+    <h1 class="special">Ea, exercitationem provident!</h1>
+    <h1 class="special">Iusto, voluptatem reiciendis.</h1>
+    <h1>Quae, facere corporis?</h1>
+    <h1>Alias, fuga eligendi.</h1>
+
+</body>
+</html>
