@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* j로 시작하는 타이틀 attribute선택하기 */
+        [title^="j"]{
+            color:blue;
+        }
+        /* a로 끝나는 타이틀 attribute선택하기 */
+        [title$="a"]{
+            background-color: gold;
+        }
+
+        h1[title$="a"]{
+            font-size:3em;
+        }
+        /* u라는 글자가 들어간 타이틀 attribute선택하기 */
+        [title*="u"]{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1[title]*5>lorem3 -->
+    <h1 title="jimin">Lorem, ipsum dolor.</h1>
+    <h1 title="jungkuk">Quo, at possimus.</h1>
+    <h1 title="rm">Asperiores, mollitia voluptate.</h1>
+    <h1 title="v">Corporis, numquam? Repellendus?</h1>
+    <h1 title="suga">Debitis, recusandae earum?</h1>
+
+    <!-- h2[title]*3>lorem3 -->
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Accusamus, voluptas atque.</h2>
+    <h2 title="asia">Repellendus, ullam libero.</h2>
+
+
+</body>
+</html>
