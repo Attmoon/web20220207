@@ -31,25 +31,25 @@
             document.querySelector("#para1").innerHTML = val.length;
         }
 
-        document.getElementById("input2").onkeyup = function () {
-            let txt = document.getElementById("input2").value;
-
-            if (txt.length <= 3) {
-                document.getElementById("para2").innerHTML = "3글자 이하입니다."
-            } else {
-                document.getElementById("para2").innerHTML = "4글자 이상입니다."
-            }
-        }
-
         // document.getElementById("input2").onkeyup = function () {
-        //     let val = this.value;
+        //     let txt = document.getElementById("input2").value;
 
-        //     if (val.length <= 3) {
+        //     if (txt.length <= 3) {
         //         document.getElementById("para2").innerHTML = "3글자 이하입니다."
         //     } else {
         //         document.getElementById("para2").innerHTML = "4글자 이상입니다."
         //     }
         // }
+
+        document.getElementById("input2").onkeyup = function () {
+            let val = this.value;
+
+            if (val.length <= 3) {
+                document.getElementById("para2").innerHTML = "3글자 이하입니다."
+            } else {
+                document.getElementById("para2").innerHTML = "4글자 이상입니다."
+            }
+        }
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
