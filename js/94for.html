@@ -26,11 +26,27 @@
             console.log(item);
         }
 
-        let arr2 = [3, 4, 5, 6, 7, 8, 9]
+        let arr2 = [3, 4, 5, 6, 7, 8, 9];
         //for of 사용해서 모든값 더해서 출력
         for (let item of arr2) {
             console.log(item);
         }
+
+        //arr1의 모든 문자열 연결해서 출력
+        //jinjiminrmv
+        let str=""
+        for (let item of arr1) {
+            str += item;
+        }
+        console.log(str);
+        sum = 0;
+        let arr3 = [[6,5,1,2],[0,1,2],[9,8,7,2],[9,3,4]];
+        for (let subArray of arr3) {
+            for(let item of subArray){
+                sum += item;
+            }
+        }
+        console.log(sum);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
