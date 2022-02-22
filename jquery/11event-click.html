@@ -18,38 +18,42 @@
 </head>
 
 <body>
-
     <h1 id="head1">
         Lorem.
     </h1>
     <h1 id="head2">
-        Totam.
+        Mollitia.
     </h1>
     <h1 id="head3">
-        Aperiam?
+        Odit!
     </h1>
 
-    <p id="para1">
-        Lorem, ipsum.
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam, provident doloribus ex dolorem, modi
+        iste cumque numquam tempore praesentium illum! Nostrum, dicta ad. Sapiente delectus sequi dolores recusandae
+        sunt.
     </p>
-    <p id="para2">
-        Voluptatum, sunt.
+    <p>
+        Voluptates sit recusandae dolorem laborum accusantium vel commodi ducimus consequuntur quia dolorum impedit
+        itaque deserunt magnam, rem odit consequatur, molestias eum consectetur deleniti amet est libero unde vitae!
+        Similique, rerum.
     </p>
-    <p id="para3">
-        Dolorem, officiis.
+    <p>
+        Ratione dicta excepturi nam similique cupiditate. Culpa assumenda suscipit natus! Explicabo eum possimus quam
+        fugiat quas sunt, nostrum iure qui rerum sit ex, tempora quia placeat nulla dolorem odit a?
     </p>
 
     <script>
-        $("h1").click(function () {
-            console.log("click!!!!!!!");
-        });
-
-        //p 요소가 클릭되면 "클릭됨" 출력
-        $("p").click(function () {
-            console.log("클릭됨");
+        $("h1,p").click(function () {
+            // console.log(this);
+            $(this).hide();
         })
-    </script>
 
+        //클릭된 p요소 숨겨지게
+        // $("p").click(function () {
+        //     $(this).hide();
+        // })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
