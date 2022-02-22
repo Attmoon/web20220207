@@ -10,56 +10,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
         integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
     </style>
 </head>
 
 <body>
 
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Eaque.
+    </h1>
+    <p id="para1">
+        Lorem, ipsum.
+    </p>
+    <p id="para2">
+        Eaque, quo!
+    </p>
+
     <script>
-        //break : 가장 가까운 loop 종료
+        $("h1, p").hide();
 
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-            break;
-        }
+        $("#para1").show();
 
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-
-            if (i == 3) {
-                break;
-            }
-        }
-
-        // 0~4까지 출력
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-
-            if (i >= 4) {
-                break;
-            }
-        }
-
-        //0~4까지 출력
-        for (let i = 0; i<10; i++){
-            if (i===5) {
-                break;
-            }
-            console.log(i);
-        }
-
-        let i=0;
-        while (i<10) {
-            console.log(i);
-            
-            if(i===3) {
-                break;
-            }
-
-            i++;
-        }
+        //모든 h1요소를 보이게
+        $("h1").show();
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
